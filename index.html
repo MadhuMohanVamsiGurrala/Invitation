@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sri Rama Navami Invitation</title>
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .card {
+    position: relative;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 600px;
+    width: 80%;
+    border: 5px solid #ffd700; /* Golden yellow color for border */
+    color: #333; /* Darker text color */
+    overflow: hidden; /* Hide overflow content */
+    background-image: url('Sri Rama Navami Background.jpg'); /* Background image */
+    background-size: cover; /* Ensure the background image covers the entire area */
+    background-position: center; /* Center the background image */
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: -2px; /* Move border above text */
+    left: -2px;
+    width: calc(100% + 4px); /* Add 4px to account for border width */
+    height: calc(100% + 4px);
+    border: 2px solid #ffd700; /* Golden yellow color for border */
+    border-radius: 20px;
+    z-index: -1;
+}
+
+.chief-guest img {
+    width: 150px;
+    border-radius: 50%;
+    margin-top: 20px;
+    opacity: 0.8;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5); /* White color with 50% opacity */
+    border-radius: 20px;
+}
+
+.card h1,
+.card p {
+    position: relative;
+    z-index: 1; /* Ensure text remains above overlay */
+    font-size: 28px; /* Increase font size */
+    font-family: 'Arial', sans-serif; /* Change font family */
+    margin-bottom: 20px; /* Add margin for spacing */
+}
+
+.card img {
+    width: 150px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.highlight {
+    color: #ff6347; /* Highlight color */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.decorative-line {
+    width: 150px;
+    height: 3px;
+    background-color: #ffd700; /* Golden yellow color for decorative line */
+    margin: 30px auto;
+}
+
+.from-text {
+    text-align: right;
+    font-size: 18px; /* Increase font size */
+    font-family: 'Arial', sans-serif; /* Change font family */
+    margin-top: 30px; /* Add margin for spacing */
+}
+
+.invitation-text {
+    font-family: 'Arial', sans-serif; /* Change font family */
+    font-size: 22px; /* Increase font size */
+}
+
+.cursive-text {
+    font-family: 'cursive', cursive; /* Change font family to cursive */
+}
+
+.chief-guest {
+    position: relative;
+}
+
+.chief-guest::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5); /* Adjust opacity as needed */
+    border-radius: 50%;
+}
+
+.graphic {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #fff; /* White color */
+    border-radius: 50%;
+}
+
+.graphic::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+    background-color: #ffd700; /* Golden yellow color */
+    border-radius: 50%;
+}
+
+.stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('stars.png'); /* Stars image */
+    background-size: 100px; /* Size of the stars */
+}
+
+</style>
+</head>
+<body>
+<div class="card">
+    <div class="stars"></div>
+    <div class="graphic"></div>
+    <h1><span class="cursive-text">Sri Rama Navami Invitation</span></h1>
+    <div class="decorative-line"></div>
+    <p><span class="invitation-text">You are cordially invited to celebrate Sri Rama Navami, the auspicious festival commemorating the birth of Lord Rama.</span></p>
+    <p><strong>Date:</strong> 17-04-2024 (Wednesday)</p>
+    <p><strong>Time:</strong> 10 A.M.</p>
+    <p><strong>Venue:</strong> Ramalayam, Kothakota</p>
+    <div class="chief-guest">
+        <img src="Mr Sarath Kiran.JPG" alt="Chief Guest">
+        <p><strong><span class="highlight">Mr. Sarath Kiran</span></strong></p>
+        <p>MCA, MS Library, MSc Political Science</p>
+        <p>CEO of Origin Company</p>
+    </div>
+    <p>Please join us with your family and friends to seek the blessings of Lord Rama on this divine occasion.</p>
+    <p class="from-text">From Kothakota<br>Sarath Fans</p>
+</div>
+<div class="overlay"></div>
+</body>
+</html>
